@@ -1,0 +1,2 @@
+class CoverArtArchive:
+    pass
