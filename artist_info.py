@@ -4,6 +4,7 @@ from lib.musicbrainz import MusicBrainz
 from lib.lastfm import LastFm
 from lib.vagalume import Vagalume
 from lib.coverartarchive import CoverArtArchive
+from lib.echonest import EchoNest
 
 
 class ArtistInfo:
