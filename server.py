@@ -13,14 +13,14 @@ class ArtistSearchHandler(tornado.web.RequestHandler):
 
 class ArtistInfoByMbidHandler(tornado.web.RequestHandler):
 
-    def get(self, mbid):
-        response = ArtistInfo().get_info(mbid)
+    def get(self, mbid, name):
+        response = ArtistInfo().get_info(mbid, name)
         self.write(response)
 
 
 app = tornado.web.Application([
     (r'/search/([a-z0-9 -]+)', ArtistSearchHandler),
-    (r'/info/(.*)', ArtistInfoByMbidHandler),
+    (r'/info/(.*)/(.*)?', ArtistInfoByMbidHandler),
 ])
 
 if __name__ == '__main__':

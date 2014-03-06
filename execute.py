@@ -27,8 +27,9 @@ if __name__ == '__main__':
     num = int(input('Selecione o numero do artista correto: '))
     if (len(search['artist-list']) > num-1):
         mbid = search['artist-list'][num-1]['id']
+        name = search['artist-list'][num-1]['name'].decode('utf-8')
 
-        info = artist_info.get_info(mbid)
+        info = artist_info.get_info(mbid, name)
 
         pp.pprint(info)
 
