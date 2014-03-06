@@ -22,7 +22,7 @@ class MusicBrainz:
 
 
     @staticmethod
-    def get_artist_by_mbid(mbid):
+    def get_artist_info(mbid):
         result = musicbrainzngs.get_artist_by_id(mbid, ['url-rels', 'tags'])
         releases = musicbrainzngs.browse_releases(artist=mbid, limit=100)
 

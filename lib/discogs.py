@@ -1,0 +1,2 @@
+class Discogs:
+    pass
