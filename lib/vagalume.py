@@ -1,19 +1,20 @@
 from utils import *
+from slugify import slugify
 
 
 class Vagalume:
 
     def __init__(self):
-        self.base_url = 'http://www.vagalume.com.br/'
+        self.base_url = 'http://www.vagalume.com.br'
 
 
-    def get_artist_info(self, name):
+    def get_artist_info(self, artist_name):
         
-        url = self.base_url + name + '/index.js'
+        url = '%s/%s/index.js' % (self.base_url, slugify(artist_name))
         json = get_json(url)
         result = None
 
-        if 'artist' in json:
+        if json and 'artist' in json:
             artist = json['artist']
             albums = artist['albums']['item']
 
