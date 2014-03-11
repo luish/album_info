@@ -3,11 +3,20 @@ artist_info
 
 Get the maximum of information about a music artist.
 
-## APIs
+### Status
 
-- [ ] Musicbrainz
-- [ ] Last.fm
-- [ ] CoverArtArchive.org
-- [ ] Discogs
-- [ ] Echo Nest
-- [ ] FreeDB.org
+Under development.
+
+### APIs
+
+**In progress:**
+- Musicbrainz
+- Last.fm
+- Discogs
+- Echo Nest
+- Vagalume
+
+**To do:**
+- Spotify
+- FreeDB.org
+- CoverArtArchive.org
