@@ -19,7 +19,7 @@ class ArtistInfoByMbidHandler(tornado.web.RequestHandler):
 
 
 app = tornado.web.Application([
-    (r'/search/([a-z0-9 -]+)', ArtistSearchHandler),
+    (r'/search/(.*)', ArtistSearchHandler),
     (r'/info/(.*)/(.*)?', ArtistInfoByMbidHandler),
 ])
 
