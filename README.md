@@ -1,4 +1,4 @@
-artist_info
+artist-info-api
 ==========
 
 Get the maximum of information about a music artist.
@@ -15,8 +15,8 @@ Under development.
 - Discogs
 - Echo Nest
 - Vagalume
+- CoverArtArchive.org
 
 **To do:**
 - Spotify
 - FreeDB.org
-- CoverArtArchive.org
